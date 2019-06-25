@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:background="#1B6896">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CollaboLab 자리언제나?"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:textSize="35dp"
+            android:textColor="#DDD"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세종대학교 대양 AI 센터 콜라보랩의 혼잡도 예측"
+            android:layout_gravity="center"
+            android:layout_marginTop="-65dp"
+            android:textSize="15dp"
+            android:textColor="#DDD"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Team - SAI"
+            android:textSize="15dp"
+            android:textColor="#DDD"
+            android:layout_gravity="right | bottom"/>
+    </FrameLayout>
+</LinearLayout>
