@@ -31,7 +31,6 @@ public class Service {
         JSONObject jsonObject = new JSONObject();
 
         try {
-            Log.i("aaa","1");
             jsonObject.accumulate("url", BASE_URL+"numofpeople");
             // 네트워크 처리 비동기화
             resultData = new NetworkProcessor().execute(jsonObject).get();
@@ -89,11 +88,11 @@ public class Service {
 
             jsonObject = resultData.getJSONObject(0);
             return new int[]{
-                    Integer.parseInt(jsonObject.getString("mon_avg")),
-                    Integer.parseInt(jsonObject.getString("tue_avg")),
-                    Integer.parseInt(jsonObject.getString("wed_avg")),
-                    Integer.parseInt(jsonObject.getString("thr_avg")),
-                    Integer.parseInt(jsonObject.getString("fri_avg")),
+                    (int)jsonObject.getDouble("mon_avg"),
+                    (int)jsonObject.getDouble("tue_avg"),
+                    (int)jsonObject.getDouble("wed_avg"),
+                    (int)jsonObject.getDouble("thr_avg"),
+                    (int)jsonObject.getDouble("fri_avg"),
             };
 
         }catch (JSONException | InterruptedException | ExecutionException e) {
@@ -109,7 +108,7 @@ public class Service {
 
             // 네트워크 처리 비동기화
             resultData = new NetworkProcessor().execute(jsonObject).get();
-
+            Log.i("PCNT",resultData.toString());
             // 결과 처리
             if(resultData == null)
                 // error
@@ -144,10 +143,10 @@ public class Service {
 
             jsonObject = resultData.getJSONObject(0);
             int arr[] = {
-                    Integer.parseInt(jsonObject.getString("t1")),
-                    Integer.parseInt(jsonObject.getString("t2")),
-                    Integer.parseInt(jsonObject.getString("t3")),
-                    Integer.parseInt(jsonObject.getString("t4")),
+                    Integer.parseInt(jsonObject.getString("s1")),
+                    Integer.parseInt(jsonObject.getString("s2")),
+                    Integer.parseInt(jsonObject.getString("s3")),
+                    Integer.parseInt(jsonObject.getString("s4")),
             };
             return arr;
         }catch (JSONException | InterruptedException | ExecutionException e) {

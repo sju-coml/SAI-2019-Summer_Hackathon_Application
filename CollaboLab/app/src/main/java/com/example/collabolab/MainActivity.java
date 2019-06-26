@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private void reflash(){
         loadPopulation();
         loadTablePCnt();
+        loadTableStatus();
         loadWeek();
     }
 
@@ -237,31 +238,31 @@ public class MainActivity extends AppCompatActivity {
 
 
         ArrayList<BarEntry> values = new ArrayList<>();
-        values.add(new BarEntry(7f, 100));
-        values.add(new BarEntry(7.5f, 70));
-        values.add(new BarEntry(8f, 120));
-        values.add(new BarEntry(8.5f, 55));
-        values.add(new BarEntry(9f, 50));
-        values.add(new BarEntry(9.5f, 100));
-        values.add(new BarEntry(10f, 70));
-        values.add(new BarEntry(10.5f, 100));
-        values.add(new BarEntry(11f, 70));
-        values.add(new BarEntry(11.5f, 75));
-        values.add(new BarEntry(12f, 80));
-        values.add(new BarEntry(12.5f, 25));
-        values.add(new BarEntry(13f, 90));
-        values.add(new BarEntry(13.5f, 65));
+        values.add(new BarEntry(7f, 4));
+        values.add(new BarEntry(7.5f, 4));
+        values.add(new BarEntry(8f, 6));
+        values.add(new BarEntry(8.5f, 12));
+        values.add(new BarEntry(9f, 22));
+        values.add(new BarEntry(9.5f, 34));
+        values.add(new BarEntry(10f, 19));
+        values.add(new BarEntry(10.5f, 20));
+        values.add(new BarEntry(11f, 40));
+        values.add(new BarEntry(11.5f, 65));
+        values.add(new BarEntry(12f, 70));
+        values.add(new BarEntry(12.5f, 74));
+        values.add(new BarEntry(13f, 74));
+        values.add(new BarEntry(13.5f, 70));
         values.add(new BarEntry(14f, 52));
-        values.add(new BarEntry(14.5f, 15));
-        values.add(new BarEntry(15f, 95));
-        values.add(new BarEntry(15.5f, 45));
-        values.add(new BarEntry(16f, 80));
-        values.add(new BarEntry(16.5f, 50));
-        values.add(new BarEntry(17f, 100));
-        values.add(new BarEntry(17.5f, 70));
-        values.add(new BarEntry(18f, 120));
-        values.add(new BarEntry(18.5f, 55));
-        values.add(new BarEntry(19f, 55));
+        values.add(new BarEntry(14.5f, 22));
+        values.add(new BarEntry(15f, 66));
+        values.add(new BarEntry(15.5f, 63));
+        values.add(new BarEntry(16f, 55));
+        values.add(new BarEntry(16.5f, 55));
+        values.add(new BarEntry(17f, 34));
+        values.add(new BarEntry(17.5f, 12));
+        values.add(new BarEntry(18f, 4));
+        values.add(new BarEntry(18.5f, 3));
+        values.add(new BarEntry(19f, 3));
 
         BarDataSet set1 = null;
         if (chart2.getData() != null &&

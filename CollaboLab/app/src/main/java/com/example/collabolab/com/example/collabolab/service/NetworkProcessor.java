@@ -95,7 +95,6 @@ public class NetworkProcessor extends AsyncTask<JSONObject, Void, JSONArray> {
             JSONArray result;
 
             // 서버 연결
-            Log.i("aaa",jsonObjects[0].getString("url"));
             if (!connectServer(jsonObjects[0].getString("url"))){
                 return null;
             }
