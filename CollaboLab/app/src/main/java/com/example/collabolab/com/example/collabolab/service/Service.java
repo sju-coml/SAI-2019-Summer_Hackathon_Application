@@ -1,20 +1,12 @@
 package com.example.collabolab.com.example.collabolab.service;
 
-import android.os.AsyncTask;
-import android.util.JsonReader;
 import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.concurrent.ExecutionException;
-import java.util.logging.Logger;
-
-import javax.net.ssl.HttpsURLConnection;
 
 
 public class Service {
@@ -23,7 +15,6 @@ public class Service {
     final String BASE_URL = "http://172.16.5.132:5000/";
 
     public int population(int i){
-
         return -1;
     }
 
